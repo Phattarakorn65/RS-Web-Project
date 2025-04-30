@@ -1,24 +1,52 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Restaurant List</title>
-</head>
-<body>
-    <h1>Restaurant List</h1>
-    <ul>
-        {% for restaurant in restaurants %}
-            <li>
-                <a href="{% url 'restaurant_detail' restaurant.pk %}">{{ restaurant.name }}</a> - {{ restaurant.category }}<br>
-                {{ restaurant.description|truncatewords:20 }}
-                {% if restaurant.image %}<br>
-                    <img src="{{ restaurant.image.url }}" alt="{{ restaurant.name }}" width="100">
+{% extends 'base/base.html' %}
+
+{% block title %}Restaurant Recommendations{% endblock %}
+
+{% block content %}
+<div class="row mb-4">
+    <div class="col-12">
+        <h1 class="display-4 text-center mb-4">Restaurant Recommendations</h1>
+        <p class="lead text-center">Discover the best restaurants in your area!</p>
+    </div>
+</div>
+
+<div class="row">
+    {% for restaurant in restaurants %}
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                {% if restaurant.image %}
+                    <img src="{{ restaurant.image.url }}" class="card-img-top" alt="{{ restaurant.name }}">
+                {% else %}
+                    <div class="card-img-top bg-light d-flex align-items-center justify-content-center">
+                        <i class="fas fa-utensils fa-3x text-secondary"></i>
+                    </div>
                 {% endif %}
-            </li>
-        {% empty %}
-            <li>No restaurants found.</li>
-        {% endfor %}
-    </ul>
-    <a href="/admin/">Admin</a>
-</body>
-</html> 
+                <div class="card-body">
+                    <h5 class="card-title">{{ restaurant.name }}</h5>
+                    <span class="badge bg-secondary mb-2">{{ restaurant.category }}</span>
+                    <p class="card-text">{{ restaurant.description|truncatewords:15 }}</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <a href="{% url 'restaurant_detail' restaurant.pk %}" class="btn btn-primary">
+                            <i class="fas fa-info-circle"></i> View Details
+                        </a>
+                        <small class="text-muted">
+                            <i class="fas fa-comment"></i> 
+                            {{ restaurant.reviews.count }} review{{ restaurant.reviews.count|pluralize }}
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% empty %}
+        <div class="col-12 text-center">
+            <div class="alert alert-info">
+                <i class="fas fa-info-circle fa-lg me-2"></i>
+                No restaurants found. Be the first to add one in the admin area!
+            </div>
+            <a href="/admin/" class="btn btn-primary mt-3">
+                <i class="fas fa-plus-circle"></i> Add Restaurant
+            </a>
+        </div>
+    {% endfor %}
+</div>
+{% endblock %} 
