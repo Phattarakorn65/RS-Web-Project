@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ restaurant.name }}</title>
+</head>
+<body>
+    <h1>{{ restaurant.name }}</h1>
+    <p><strong>Category:</strong> {{ restaurant.category }}</p>
+    <p>{{ restaurant.description }}</p>
+    {% if restaurant.image %}
+        <img src="{{ restaurant.image.url }}" alt="{{ restaurant.name }}" width="300">
+    {% endif %}
+    <h2>Reviews</h2>
+    <ul>
+        {% for review in restaurant.reviews.all %}
+            <li><strong>{{ review.author }}</strong> ({{ review.created_at|date:"Y-m-d H:i" }}):<br>{{ review.text }}</li>
+        {% empty %}
+            <li>No reviews yet.</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Back to list</a>
+</body>
+</html> 
