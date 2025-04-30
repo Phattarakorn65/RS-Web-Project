@@ -75,6 +75,10 @@ A Django-based web application for discovering and reviewing restaurants.
 - **Restaurant** - Stores restaurant information including name, description, image, and category
 - **Review** - Stores user reviews linked to restaurants
 
+## Thai Language Installation Guide
+
+For Thai language installation instructions, please see [LOCAL_SETUP.md](LOCAL_SETUP.md)
+
 ## License
 
 MIT
