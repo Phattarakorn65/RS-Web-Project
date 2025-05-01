@@ -103,4 +103,4 @@ Phattarakorn65
 
 ## Infographic โปรเจค website แนะนำร้านอาหาร
 
-https://github.com/Phattarakorn65/RS-Web-Project/blob/main/Infographic_page-0001.jpg
+![screenshot](https://github.com/Phattarakorn65/RS-Web-Project/blob/main/Infographic_page-0001.jpg)
