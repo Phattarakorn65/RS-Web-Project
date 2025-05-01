@@ -99,7 +99,7 @@ Phattarakorn65
 
 ## วิดีโอแนะนำเว็ปไซต์ 
 
-[![Watch the video](https://img.youtu.be/iV4nVncNoUU.jpg)](https://youtu.be/KDQ1o1Nxqc8)
+[![Watch the video](https://img.https://www.youtube.com/watch?v=KDQ1o1Nxqc8.jpg)](https://youtu.be/KDQ1o1Nxqc8)
 
 ## Infographic โปรเจค website แนะนำร้านอาหาร
 
