@@ -66,6 +66,12 @@ A Django-based web application for discovering and reviewing restaurants.
 
 8. Access the site at http://127.0.0.1:8000/
 
+9. รหัสการเข้า หน้าADMIN
+    ```
+    user: admin
+    password: 1234
+    ```
+    
 ## Project Structure
 
 - `restaurants/` - Django app containing models, views, and templates
@@ -90,3 +96,10 @@ MIT
 ## Author
 
 Phattarakorn65 
+
+## วิดีโอแนะนำเว็ปไซต์ 
+
+[![Watch the video](https://img.youtu.be/iV4nVncNoUU.jpg)](https://youtu.be/KDQ1o1Nxqc8)
+
+## Infographic โปรเจค website แนะนำร้านอาหาร
+
