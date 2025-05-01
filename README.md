@@ -25,6 +25,10 @@ A Django-based web application for discovering and reviewing restaurants.
 
 ### Installation
 
+https://github.com/user-attachments/assets/973e6dcc-99ed-4dff-9a91-738076b104bf
+
+
+
 1. Clone the repository
    ```
    git clone https://github.com/Phattarakorn65/RS-Web-Project.git
