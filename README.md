@@ -99,9 +99,19 @@ Phattarakorn65
 
 ## ตัวอย่างหน้าเว็ป
 
+##หน้าแรก
+
 ![screenshot](https://github.com/Phattarakorn65/RS-Web-Project/blob/main/%E0%B8%AB%E0%B8%99%E0%B9%89%E0%B8%B2%E0%B9%81%E0%B8%A3%E0%B8%81.jpg)
 
+##หน้าแนะนำร้านร้านอาหาร
 
-## Infographic โปรเจค website แนะนำร้านอาหาร
+![screenshot]()
 
-![screenshot](https://github.com/Phattarakorn65/RS-Web-Project/blob/main/Infographic_page-0001.jpg)
+##หน้าผู้ใช้ส่งข้อมูลหาเว็ปไซต์
+
+![screenshot]()
+
+##หน้าLogin เข้าหน้า ADMIN
+
+![screenshot]()
+
